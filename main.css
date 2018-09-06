@@ -1,0 +1,94 @@
+.holidy-container {
+    height: 100%;
+    width: 100%;
+}
+
+.holidy-container .hol-table {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    border: 1px green;
+    flex-direction: column;
+}
+
+.hol-table .hol-header {
+    height: 50px;
+    background-color: aquamarine;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hol-header .hol-title {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height: 50%;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.hol-header .hol-tip {
+    position: absolute;
+    right: 5px;
+}
+
+.hol-table .hol-week-header {
+    height: 30px;
+    border: solid 1px green;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hol-table .hol-date {
+    display: flex;
+    flex-direction: column;
+}
+
+.hol-date .hol-date-tr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: solid darkolivegreen 1px;
+}
+
+.hol-table .hol-date-tr .hol-date-cell {
+    height: 60px;
+    width: 60px;
+    border: solid turquoise 1px;
+    vertical-align: middle;
+}
+
+.workday-cell {
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.holidy-cell {
+    text-align: center;
+    color: red;
+    user-select: none;
+    border: solid red 1px;
+    cursor: pointer;
+}
+
+.unselect{
+    -webkit-user-select:none;
+     -moz-user-select:none;
+     -ms-user-select:none;
+     user-select:none;
+}
+
+.hol-cell-selected {
+    background-color: beige;
+}
+
+.pointer {
+    cursor: pointer;
+}
