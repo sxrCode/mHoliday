@@ -16,10 +16,10 @@ $(document).ready(function () {
 var HolidayApp = function () {
     var _this = this;
     var mdate = new Date();
-    
+
     mdate.setDate(1);
     var initDay = mdate.getDay(); //星期几
-    
+
 
     render();
 
@@ -84,7 +84,7 @@ var HolidayApp = function () {
         /**
          * 清空
          */
-        $(trs).each(function(index, ele){
+        $(trs).each(function (index, ele) {
             $(ele).html('');
         });
 
