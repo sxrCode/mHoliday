@@ -134,7 +134,6 @@ var DateCell = function (d, type, ele) {
     var _this = this;
 
     this.onSelect = function () {
-        console.log('type onSelect!');
         if (!isSelect) {
             $(mele).addClass('hol-cell-selected');
         } else {
