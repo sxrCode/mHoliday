@@ -1,3 +1,31 @@
-.test-container {
-    width: 300px;
+
+
+.test-container .testdiv-first{
+   width: 60px;
 }
+
+
+.test-container .testdiv-second{
+    height: 100px;
+ }
+
+.inline-div {
+    display: inline-block;
+}
+
+#d1 {
+    position: relative;
+    width: 1210px;
+    height: 48px;
+}
+
+#d12 {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+}
+
+#d2 {
+    position: absolute;
+}
+
