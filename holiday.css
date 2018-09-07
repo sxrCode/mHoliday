@@ -1,4 +1,24 @@
 
 .hol-table {
     width: 30%;
+    min-width: 350px;
+}
+
+.hol-date-cell {
+    height: 50px;
+    max-width: 70px;
+    position: relative;
+}
+
+.hol-date-cell-header {
+    height: 10px;
+}
+
+.hol-date-cell-body {
+    height: 30px;
+    text-align: center;
+}
+
+.hol-date-cell-footer {
+    height: 10px;
 }
