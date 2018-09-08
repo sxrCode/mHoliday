@@ -56,21 +56,33 @@ var CalenderCom = function (calEleContainer, month) {
             var cellData = dates[i];
             var row = parseInt(i / 7);
             var calendartr = trs[row];
-            var calendarCellTmp = template('calendar-cell', {});
-            var calendarCell = $(calendarCellTmp);
-            $(calendartr).append(calendarCell);
-
-            var cellBody = $('div.hol-date-cell-body', calendarCell)[0];
-
-            if (cellData.type != 0) {
-                $(cellBody).append($('<div class="tn-hol-body-num">' + cellData.num + '</div>'));
-            }
-
+            var dateCell = new DateCell(cellData, calendartr);
 
         }
     }
 
 };
+
+var DateCell = function (dateData, trEle) {
+    var tdEle = $(template('calendar-cell', {}));
+    var cellBody = $('div.hol-date-cell-body', tdEle)[0];
+    var mData = dateData;
+
+    switch (mData.type) {
+        case 1:
+            $(cellBody).append($('<div>' + mData.num + '</div>'));
+            break;
+        case 2:
+            $(cellBody).append($('<div class="hol-body-holiday-num">' + mData.num + '</div>'));
+            break;
+    }
+
+    $(cellBody).addClass('date-selectable');
+
+    if (trEle != null) {
+        $(trEle).append(tdEle);
+    }
+}
 
 function mGetDate(year, month) {
     var d = new Date(year, month, 0);

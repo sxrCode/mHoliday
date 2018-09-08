@@ -1,4 +1,3 @@
-
 .hol-table {
     min-width: 350px;
 }
@@ -8,8 +7,6 @@
     max-width: 70px;
     position: relative;
 }
-
-
 
 .hol-date-cell-header {
     height: 15px;
@@ -45,4 +42,12 @@
     border-radius: 50%;
     margin: auto;
     background-color: gray;
+}
+
+.date-selectable {
+    cursor: pointer;
+}
+
+div.hol-body-holiday-num {
+    color: red;
 }
