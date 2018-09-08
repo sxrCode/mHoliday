@@ -39,61 +39,82 @@
         </div>
 
         <div class="testdiv-second inline-div">
-                <div class="tn-hol-header">
-                    <!-- <div class="hol-tip hol-tip-work">班</div> -->
-                </div>
-                <div class="tn-hol-body">
-                    <div class="ts-hol-body-num">12</div>
-                </div>
-                <div class="tn-hol-footer"></div>
+            <div class="tn-hol-header">
+                <!-- <div class="hol-tip hol-tip-work">班</div> -->
             </div>
+            <div class="tn-hol-body">
+                <div class="ts-hol-body-num">12</div>
+            </div>
+            <div class="tn-hol-footer"></div>
+        </div>
         <div>hello world</div>
     </div>
 
-    <table class="hol-table">
-        <tbody>
-            <tr>
-                <th>
-                    <div>星期日</div>
-                </th>
-                <th>
-                    <div>星期一</div>
-                </th>
-                <th>
-                    <div>星期二</div>
-                </th>
-                <th>
-                    <div>星期三</div>
-                </th>
-                <th>
-                    <div>星期四</div>
-                </th>
-                <th>
-                    <div>星期五</div>
-                </th>
-                <th>
-                    <div>星期六</div>
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="hol-date-cell">
-                        <div class="hol-date-cell-header"></div>
-                        <div class="hol-date-cell-body">1</div>
-                        <div class="hol-date-cell-footer"></div>
-                    </div>
-                </td>
-            </tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-        </tbody>
+    <div>
+        <div class="calendar-container inline-div calendar-one"></div>
+        <div class="calendar-container inline-div calendar-two"></div>
+    </div>
 
-    </table>
 
-    <!-- <script src="main.js"></script> -->
+
+    <!-- template start -->
+
+    <script id="calendar-table" type="text/html">
+        <table class="hol-table">
+            <tbody>
+                <tr>
+                    <th>
+                        <div>星期日</div>
+                    </th>
+                    <th>
+                        <div>星期一</div>
+                    </th>
+                    <th>
+                        <div>星期二</div>
+                    </th>
+                    <th>
+                        <div>星期三</div>
+                    </th>
+                    <th>
+                        <div>星期四</div>
+                    </th>
+                    <th>
+                        <div>星期五</div>
+                    </th>
+                    <th>
+                        <div>星期六</div>
+                    </th>
+                </tr>
+                
+                <tr class="calendar-tr"></tr>
+                <tr class="calendar-tr"></tr>
+                <tr class="calendar-tr"></tr>
+                <tr class="calendar-tr"></tr>
+                <tr class="calendar-tr"> </tr>
+                <tr class="calendar-tr"></tr>
+            </tbody>
+    
+        </table>
+    </script>
+
+    <script id="calendar-cell" type="text/html">
+        <td>
+            <div class="hol-date-cell">
+                <div class="hol-date-cell-header"></div>
+                <div class="hol-date-cell-body">
+                    <!-- <div class="tn-hol-body-num">12</div> -->
+                </div>
+                <div class="hol-date-cell-footer"></div>
+            </div>
+        </td>
+    </script>
+
+    <!-- template end -->
+
+    <script src="./jquery-2.2.4.min.js"></script>
+    <script src="./template-web.js"></script>
+    <script src="./main.js"></script>
+
 </body>
 
 </html>
