@@ -1,41 +1,97 @@
-
-
-.test-container .testdiv-first{
-   width: 60px;
+body {
+    font-family: sans-serif;
 }
 
-
-.test-container .testdiv-second{
-    height: 100px;
- }
+.test-container .testdiv-first {
+    width: 47px;
+    height: 47px;
+    line-height: 47px;
+    border-radius: 50%;
+    text-align: center;
+    color: red;
+    border: solid red 3px;
+}
 
 .inline-div {
     display: inline-block;
-}
-
-#d1 {
-    position: relative;
-    width: 1210px;
-    height: 48px;
-}
-
-#d12 {
-    position: absolute;
-    width: 150px;
-    height: 40px;
 }
 
 #d2 {
     position: absolute;
 }
 
-.circle{
-    width:50px;
-    height:50px;
-    border-radius:50%;
-    font-size:25px;
-    color:#000;
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: white;
     line-height: 50px;
-    text-align:center;
-    background:#fff
+    text-align: center;
+    background: rgb(241, 34, 34)
+}
+
+.test-container .testdiv-second {
+    background-color: rgb(189, 185, 185);
+    min-width: 50px;
+}
+
+#hol-header {
+    height: 16px;
+    position: relative;
+}
+
+#hol-header .hol-tip-holiday {
+    color: white;
+    background-color: red;
+}
+
+#hol-header .hol-tip {
+    width: 17px;
+    line-height: 16px;
+    text-indent: 1px;
+    text-align: left;
+}
+
+#hol-header .hol-tip-work {
+    color: white;
+    background-color: gray;
+}
+
+#hol-body {
+    height: 20px;
+    text-align: center;
+}
+
+#hol-footer {
+    height: 15px;
+}
+
+.tn-hol-body {
+    height: 20px;
+    background: white;
+    text-align: center;
+}
+
+.tn-hol-body-num {
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 50%;
+    color: gray;
+    margin: auto;
+    border: gray solid 2px;
+}
+
+.ts-hol-body-num {
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: gray;
 }
