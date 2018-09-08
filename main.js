@@ -52,7 +52,6 @@ var CalenderCom = function (calEleContainer, month) {
         }
 
         var trs = $('.calendar-tr', calendarTable);
-        console.log(trs.length);
         for (var i = 0; i < dates.length; i++) {
             var cellData = dates[i];
             var row = parseInt(i / 7);
