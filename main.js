@@ -4,7 +4,7 @@ $(document).ready(function() {
     var month = 8;
     $('.calendar-container').each(function(index, element) {
         var cal = new CalenderCom(element, month + index);
-    });
+    }); //
 });
 
 var CalenderCom = function(calEleContainer, month) {
