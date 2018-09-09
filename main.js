@@ -1,19 +1,20 @@
-$(document).ready(function () {
+$(document).ready(function() {
     console.log('calendar ready!');
 
     var month = 8;
-    $('.calendar-container').each(function (index, element) {
+    $('.calendar-container').each(function(index, element) {
         var cal = new CalenderCom(element, month + index);
     });
 });
 
-var CalenderCom = function (calEleContainer, month) {
+var CalenderCom = function(calEleContainer, month) {
     var _this = this;
     var _calEle = calEleContainer; //日历容器
     var _month = month; //当前月份
 
     var mdate = new Date();
     mdate.setMonth(_month);
+    mdate.setDate(1);
     var initDay = mdate.getDay(); //星期几
 
     var calendarTmp = template('calendar-table', {});
@@ -63,7 +64,7 @@ var CalenderCom = function (calEleContainer, month) {
 
 };
 
-var DateCell = function (dateData, trEle) {
+var DateCell = function(dateData, trEle) {
     var tdEle = $(template('calendar-cell', {}));
     var cellBody = $('div.hol-date-cell-body', tdEle)[0];
     var mData = dateData;
