@@ -51,3 +51,31 @@
 div.hol-body-holiday-num {
     color: red;
 }
+
+div.hol-body-work-num {
+    color: black;
+}
+
+div.holiday-selectable-work {
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 50%;
+    color: gray;
+    margin: auto;
+    border: gray solid 2px;
+}
+
+div.holiday-selectable-holiday {
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 50%;
+    color: rgb(241, 34, 34);
+    margin: auto;
+    border: rgb(241, 34, 34) solid 2px;
+}

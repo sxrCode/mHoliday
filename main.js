@@ -65,20 +65,39 @@ var CalenderCom = function(calEleContainer, month) {
 };
 
 var DateCell = function(dateData, trEle) {
+    var _this = this;
     var tdEle = $(template('calendar-cell', {}));
     var cellBody = $('div.hol-date-cell-body', tdEle)[0];
     var mData = dateData;
+    var numDiv;
 
     switch (mData.type) {
         case 1:
-            $(cellBody).append($('<div>' + mData.num + '</div>'));
+            numDiv = $('<div class="hol-body-work-num">' + mData.num + '</div>');
             break;
         case 2:
-            $(cellBody).append($('<div class="hol-body-holiday-num">' + mData.num + '</div>'));
+            numDiv = $('<div class="hol-body-holiday-num">' + mData.num + '</div>')
             break;
     }
 
+    if (numDiv != null) {
+        $(cellBody).append(numDiv);
+    }
+
     $(cellBody).addClass('date-selectable');
+    $(cellBody).bind('mouseout', function() {
+        console.log(mData.num + ' mouseout');
+        if (numDiv != null) {
+            $(numDiv).removeClass('holiday-selectable-work holiday-selectable-holiday');
+        }
+
+    }.bind(_this)).bind('mouseover', function() {
+        console.log(mData.num + ' mouseover');
+        if (numDiv != null) {
+            $(numDiv).addClass('holiday-selectable-holiday');
+        }
+
+    }.bind(_this));
 
     if (trEle != null) {
         $(trEle).append(tdEle);
