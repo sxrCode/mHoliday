@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>假日设置</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="holiday.css" />
+
+</head>
+
+<body>
+
+    <div class="cal-container">
+        <div class="hol-item">
+            <!--类型-->
+            <div class="hol-label">
+                <div>假日类型:</div>
+            </div>
+            <div class="hol-value">
+                <span class="date-span">13512345</span>
+                <span class="date-span">13512345</span>
+                <span class="date-span">13512345</span>
+                <span class="date-span">13512345</span>
+                <span class="date-span">13512345</span>
+                <span class="date-span">13512345</span>
+                <span class="date-span">13512345</span>
+                <span class="date-span">13512345</span>
+            </div>
+        </div>
+
+        <div class="hol-item">
+            <!--假期-->
+            <div class="hol-label">
+                <div class="hol-mode-div">选择假日</div><span>:</span>
+            </div>
+            <div class="hol-value">
+                <div class="inline-div hol-holiday-range">2018-10-01 -- 2018-10-07</div>
+                <div class="inline-div hol-holiday-info">共10天</div>
+            </div>
+        </div>
+
+        <div class="hol-item">
+            <!--调班-->
+            <div class="hol-label">
+                <div class="hol-mode-div">选择调班</div><span>:</span>
+            </div>
+            <div class="hol-value">
+                <div class="inline-div hol-shiftday-con">
+                </div>
+                <div class="inline-div hol-shiftday-info">共10天</div>
+            </div>
+        </div>
+
+        <div class="hol-item"></div>
+        <!--提示-->
+
+        <div class="hol-item hol-calendar-con">
+            <div>
+                <div class="calendar-container inline-div calendar-one"></div>
+                <div class="calendar-container inline-div calendar-two"></div>
+            </div>
+
+            <div>
+                <div class="calendar-container-work inline-div calendar-one"></div>
+                <div class="calendar-container-work inline-div calendar-two"></div>
+            </div>
+        </div>
+        <!--日历-->
+
+
+        <div id="date-con"></div>
+        <div class="button">add</div>
+    </div>
+
+    <script src="../jquery-2.2.4.min.js"></script>
+    <script src="../template-web.js"></script>
+    <script src="holiday.js"></script>
+
+    <!-- template start -->
+
+    <script id="calendar-table" type="text/html">
+        <table class="hol-table">
+            <tbody>
+                <tr>
+                    <th>
+                        <div>星期日</div>
+                    </th>
+                    <th>
+                        <div>星期一</div>
+                    </th>
+                    <th>
+                        <div>星期二</div>
+                    </th>
+                    <th>
+                        <div>星期三</div>
+                    </th>
+                    <th>
+                        <div>星期四</div>
+                    </th>
+                    <th>
+                        <div>星期五</div>
+                    </th>
+                    <th>
+                        <div>星期六</div>
+                    </th>
+                </tr>
+
+                <tr class="calendar-tr"></tr>
+                <tr class="calendar-tr"></tr>
+                <tr class="calendar-tr"></tr>
+                <tr class="calendar-tr"></tr>
+                <tr class="calendar-tr"></tr>
+                <tr class="calendar-tr"></tr>
+            </tbody>
+
+        </table>
+    </script>
+
+    <script id="calendar-cell" type="text/html">
+        <td>
+            <div class="hol-date-cell">
+                <div class="hol-date-cell-header"></div>
+                <div class="hol-date-cell-body">
+                    <!-- <div class="tn-hol-body-num">12</div> -->
+                </div>
+                <div class="hol-date-cell-footer"></div>
+            </div>
+        </td>
+    </script>
+
+    <!-- template end -->
+</body>
+
+</html>

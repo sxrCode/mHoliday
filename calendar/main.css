@@ -1,0 +1,90 @@
+.cal-container {
+    width: 70%;
+    min-width: 600px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+div.hol-item {
+    margin-bottom: 10px;
+}
+
+div.hol-label {
+    width: 20%;
+    text-align: right;
+    display: inline-block;
+}
+
+div.hol-value {
+    width: 70%;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+div.hol-mode-div {
+    display: inline-block;
+    padding: 5px;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 3px;
+}
+
+div.hol-mode-div:hover {
+    cursor: pointer;
+    background-color: darkslateblue;
+}
+
+div.hol-holiday-range {
+    width: 60%;
+    text-align: center;
+}
+
+div.hol-shiftday-con {
+    width: 60%;
+}
+
+.button {
+    padding: 5px;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: blue;
+}
+
+.date-span {
+    background: #7b6bd3;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+.date-span:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+.inline-div {
+    display: inline-block;
+}
+
+#date-con {
+    width: 350px;
+    padding: 5px;
+}
+
+.calendar-two {
+    margin-left: 30px;
+}
+
+div.hol-calendar-con {
+    text-align: center;
+}
